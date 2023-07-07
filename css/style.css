@@ -6,7 +6,7 @@
 
 body {
 	min-height: 100vh;
-	background: #353535;
+	background: white;
 }
 
 header {
@@ -19,6 +19,8 @@ header {
 
 header nav ul {
 	list-style: none;
+	display: flex;
+	align-items: center;
 }
 nav ul li a {
 	text-decoration: none;
@@ -26,4 +28,5 @@ nav ul li a {
 	padding: 5px;
 	border-radius: 3px;
 	border: 1px solid black;
+	margin: 0 8px;
 }
