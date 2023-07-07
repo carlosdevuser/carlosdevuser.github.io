@@ -3,3 +3,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	min-height: 100vh;
+	background: #353535;
+}
+
+header {
+	background: #F6F8FA;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header nav ul {
+	list-style: none;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid black;
+}
