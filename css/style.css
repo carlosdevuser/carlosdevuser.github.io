@@ -2,31 +2,86 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 
+html,
 body {
+	max-width: 1300px;
+	margin: 0 auto;
 	min-height: 100vh;
-	background: white;
+	background-color: white;
+	position: relative;
+	overflow-x: hidden;
+}
+
+html {
+	background: #40414F;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 header {
-	background: #F6F8FA;
-	height: 50px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	height: 50px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+	background: #40414F;
+	color: white;
+	padding: 20px;
 }
 
-header nav ul {
+header h1 {
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.open-menu {
+	border: none;
+	background: transparent;
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.navbar {
+	position: absolute;
+	top: 50px;
+	left: -200px;
+	background: #40414F;
+	height: 100%;
+	width: 200px;
+	transition: .4s;
+}
+
+.active {
+	left: 0;
+}
+
+.navbar ul {
+	width: 100%;
 	list-style: none;
+	padding: 15px;
+}
+
+.nav-item {
+	width: 100%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);	
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	display: block;
+}
+
+#about-me {
 	display: flex;
 	align-items: center;
-}
-nav ul li a {
-	text-decoration: none;
-	color: black;
-	padding: 5px;
-	border-radius: 3px;
-	border: 1px solid black;
-	margin: 0 8px;
+	justify-content: center;
+	height: 80vh;
 }
